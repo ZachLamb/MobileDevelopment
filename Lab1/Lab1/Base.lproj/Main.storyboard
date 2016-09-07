@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Lab1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Colorado vs. Oregon" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pbi-d7-2MF">
+                                <rect key="frame" x="213" y="55" width="175" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="8MV-29-FqF"/>
+                                    <constraint firstAttribute="width" constant="175" id="KVQ-Xl-JPH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="p6Z-ie-zp7">
+                                <rect key="frame" x="133" y="204" width="334" height="291"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="334" id="hF2-rl-b0y"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nbn-i6-F2P">
+                                <rect key="frame" x="270" y="125" width="60" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9z2-Zm-orr">
+                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                        <state key="normal" title="CO"/>
+                                        <connections>
+                                            <action selector="chooseState:" destination="BYZ-38-t0r" eventType="touchUpInside" id="012-Ca-hyl"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xjc-jm-PcW">
+                                        <rect key="frame" x="30" y="0.0" width="30" height="30"/>
+                                        <state key="normal" title="OR"/>
+                                        <connections>
+                                            <action selector="chooseState:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nY6-zC-yhE"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="xjc-jm-PcW" firstAttribute="leadingMargin" relation="lessThanOrEqual" secondItem="9z2-Zm-orr" secondAttribute="leading" constant="48" id="8bB-Ve-t3n"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nbn-i6-F2P" firstAttribute="centerX" secondItem="Pbi-d7-2MF" secondAttribute="centerX" id="6en-ce-BvA"/>
+                            <constraint firstItem="p6Z-ie-zp7" firstAttribute="top" secondItem="nbn-i6-F2P" secondAttribute="bottom" constant="49" id="Ned-dl-5VE"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="p6Z-ie-zp7" secondAttribute="bottom" constant="105" id="PhL-aU-HYU"/>
+                            <constraint firstItem="Pbi-d7-2MF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bwg-tS-yBs"/>
+                            <constraint firstItem="nbn-i6-F2P" firstAttribute="centerX" secondItem="p6Z-ie-zp7" secondAttribute="centerX" id="d3k-Km-bmC"/>
+                            <constraint firstItem="nbn-i6-F2P" firstAttribute="top" secondItem="Pbi-d7-2MF" secondAttribute="bottom" constant="47" id="oiy-HR-M6W"/>
+                            <constraint firstItem="Pbi-d7-2MF" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="35" id="sbB-tU-ZdW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="natureImage" destination="p6Z-ie-zp7" id="Izb-Xa-qYW"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="426" y="395"/>
+        </scene>
+    </scenes>
+</document>
