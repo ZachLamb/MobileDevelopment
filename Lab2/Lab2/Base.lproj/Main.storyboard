@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Lab2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Colorado" translatesAutoresizingMaskIntoConstraints="NO" id="jS5-Z7-p4W">
+                                <rect key="frame" x="180" y="39" width="240" height="268"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="cyF-Em-PiW"/>
+                                    <constraint firstAttribute="height" constant="268" id="dAg-Kt-QiZ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Long's Peak" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X8u-Pj-Dlq">
+                                <rect key="frame" x="209" y="315" width="185" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="185" id="nGx-2a-3si"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="M5X-j5-pvD">
+                                <rect key="frame" x="241" y="363" width="121" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="121" id="cys-PV-Vn1"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="CO"/>
+                                    <segment title="OR"/>
+                                </segments>
+                                <connections>
+                                    <action selector="changeInfo:" destination="BYZ-38-t0r" eventType="valueChanged" id="IQ8-26-gfr"/>
+                                </connections>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="I1w-nc-hqF">
+                                <rect key="frame" x="201" y="399" width="201" height="29"/>
+                                <segments>
+                                    <segment title="San Francisco"/>
+                                    <segment title="Avenir Next"/>
+                                </segments>
+                                <connections>
+                                    <action selector="changeFont:" destination="BYZ-38-t0r" eventType="valueChanged" id="nCV-SJ-IAw"/>
+                                </connections>
+                            </segmentedControl>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7ug-Hf-CA3">
+                                <rect key="frame" x="345" y="435" width="51" height="31"/>
+                                <connections>
+                                    <action selector="updateFont:" destination="BYZ-38-t0r" eventType="valueChanged" id="s5I-uu-lU6"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Capitalization" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ftb-IF-I5A">
+                                <rect key="frame" x="174" y="440" width="104" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="R6H-Xs-3kM">
+                                <rect key="frame" x="281" y="492" width="212" height="31"/>
+                                <connections>
+                                    <action selector="changeFontSize:" destination="BYZ-38-t0r" eventType="valueChanged" id="cqh-d8-792"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="16" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lVv-w6-r8J">
+                                <rect key="frame" x="180" y="496" width="33" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="M5X-j5-pvD" firstAttribute="top" secondItem="X8u-Pj-Dlq" secondAttribute="bottom" constant="27" id="00b-Zy-o9q"/>
+                            <constraint firstItem="jS5-Z7-p4W" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="19" id="R2j-zi-LOA"/>
+                            <constraint firstItem="jS5-Z7-p4W" firstAttribute="centerX" secondItem="X8u-Pj-Dlq" secondAttribute="centerX" id="hl9-ZX-xPV"/>
+                            <constraint firstItem="X8u-Pj-Dlq" firstAttribute="centerX" secondItem="M5X-j5-pvD" secondAttribute="centerX" id="j5G-9P-vjX"/>
+                            <constraint firstItem="X8u-Pj-Dlq" firstAttribute="top" secondItem="jS5-Z7-p4W" secondAttribute="bottom" constant="33" id="ulb-jS-EuP"/>
+                            <constraint firstItem="jS5-Z7-p4W" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zlW-4B-nfd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="capitalSwitch" destination="7ug-Hf-CA3" id="tAy-Hz-qgq"/>
+                        <outlet property="fontControl" destination="I1w-nc-hqF" id="yc1-8G-LWT"/>
+                        <outlet property="fontSize" destination="lVv-w6-r8J" id="deb-sp-hAf"/>
+                        <outlet property="imageControl" destination="M5X-j5-pvD" id="jsK-Qi-aID"/>
+                        <outlet property="natureImage" destination="jS5-Z7-p4W" id="6na-Sp-K0j"/>
+                        <outlet property="titleLabel" destination="X8u-Pj-Dlq" id="q2j-3l-chK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="429"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Colorado" width="985" height="1044"/>
+    </resources>
+</document>
