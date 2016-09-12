@@ -11,15 +11,18 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var natureImage: UIImageView!
+    @IBOutlet weak var titleLabel: UILabel!
     
     let coImages = ["Colorado1.png","Colorado2.png","Colorado3.png"]
     let orImages = ["Oregon1.png","Oregon2.png","Oregon3.png"]
     @IBAction func chooseState(sender: UIButton) {
         if sender.currentTitle=="CO"{
             natureImage.image=UIImage(named: coImages[Int(arc4random_uniform(UInt32(coImages.count)))])
+            titleLabel.text="Colorado"
         }
         else if sender.currentTitle=="OR"{
             natureImage.image=UIImage(named: orImages[Int(arc4random_uniform(UInt32(orImages.count)))])
+            titleLabel.text="Oregon"
         }
     }
     
