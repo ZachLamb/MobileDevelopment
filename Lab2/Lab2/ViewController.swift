@@ -30,13 +30,12 @@ class ViewController: UIViewController {
     }
     
     @IBAction func changeFont(sender: UISegmentedControl) {
-        let fontSize = titleLabel.font.pointSize
         
         if fontControl.selectedSegmentIndex == 0 {
-            titleLabel.font=UIFont(name: "SanFrancisco",size: fontSize)
+            titleLabel.font=UIFont(name: "SanFrancisco",size: 17)
         }
         else if fontControl.selectedSegmentIndex == 1 {
-            titleLabel.font=UIFont(name: "AvenirNext",size: fontSize)
+            titleLabel.font=UIFont(name: "AvenirNext",size: 17)
         }
     }
     
@@ -51,9 +50,11 @@ class ViewController: UIViewController {
     
     @IBAction func changeFontSize(sender: UISlider) {
             let fontSize=sender.value //float
-        fontSizeLabel.text=String(format: "%.0f", fontSize) //convert float to String
+        print(fontSize)
+        fontSizeLabel.text=String(format: "%.0f", fontSize)
+        //fontSizeLabel.text=String(format: "%.0f", fontSize) //convert float to String
         let fontSizeCGFloat=CGFloat(fontSize) //convert float to CGFloat
-        UIFont.systemFontOfSize(fontSizeCGFloat)
+        titleLabel.font = UIFont.systemFontOfSize(fontSizeCGFloat)
     }
     override func viewDidLoad() {
         super.viewDidLoad()
