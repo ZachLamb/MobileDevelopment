@@ -32,10 +32,10 @@ class ViewController: UIViewController {
     @IBAction func changeFont(sender: UISegmentedControl) {
         
         if fontControl.selectedSegmentIndex == 0 {
-            titleLabel.font=UIFont(name: "SanFrancisco",size: 17)
+            titleLabel.font=UIFont(name: "SanFrancisco",size: 16)
         }
-        else if fontControl.selectedSegmentIndex == 1 {
-            titleLabel.font=UIFont(name: "AvenirNext",size: 17)
+        else {
+            titleLabel.font=UIFont(name: "HelveticaNeue",size: 16)
         }
     }
     
