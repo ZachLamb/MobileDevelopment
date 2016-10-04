@@ -8,12 +8,41 @@
 
 import UIKit
 
-class Scene2ViewController: UIViewController {
+class Scene2ViewController: UIViewController, UITextFieldDelegate {
 
+    @IBOutlet weak var userBook: UITextField!
+    @IBOutlet weak var userAuthor: UITextField!
+    @IBOutlet weak var userGenre: UITextField!
+    
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "doneFavs"{
+            let scene1ViewController = segue.destinationViewController as! ViewController
+            //check to see that text was entered in the textfields
+            if userBook.text!.isEmpty == false{
+                scene1ViewController.user.favBook=userBook.text
+            }
+            if userAuthor.text!.isEmpty == false{
+                scene1ViewController.user.favAuthor=userAuthor.text
+            }
+            if userGenre.text!.isEmpty == false{
+                scene1ViewController.user.favGenre=userGenre.text
+            }
+        }
+    }
+    
     override func viewDidLoad() {
+        userBook.delegate=self
+        userAuthor.delegate=self
+        userGenre.delegate=self
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true;
     }
 
     override func didReceiveMemoryWarning() {

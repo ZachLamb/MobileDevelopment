@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		925195DD1D9D92AD00E0D318 /* Favorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925195DC1D9D92AD00E0D318 /* Favorite.swift */; };
 		929236131D9AF08400B49E53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929236121D9AF08400B49E53 /* AppDelegate.swift */; };
 		929236151D9AF08400B49E53 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929236141D9AF08400B49E53 /* ViewController.swift */; };
 		929236181D9AF08400B49E53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 929236161D9AF08400B49E53 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		925195DC1D9D92AD00E0D318 /* Favorite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Favorite.swift; sourceTree = "<group>"; };
 		9292360F1D9AF08400B49E53 /* favorites.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = favorites.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		929236121D9AF08400B49E53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		929236141D9AF08400B49E53 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				929236121D9AF08400B49E53 /* AppDelegate.swift */,
 				929236141D9AF08400B49E53 /* ViewController.swift */,
 				929236161D9AF08400B49E53 /* Main.storyboard */,
+				925195DC1D9D92AD00E0D318 /* Favorite.swift */,
 				929236241D9AF24000B49E53 /* Scene2ViewController.swift */,
 				929236191D9AF08400B49E53 /* Assets.xcassets */,
 				9292361B1D9AF08400B49E53 /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				929236151D9AF08400B49E53 /* ViewController.swift in Sources */,
+				925195DD1D9D92AD00E0D318 /* Favorite.swift in Sources */,
 				929236131D9AF08400B49E53 /* AppDelegate.swift in Sources */,
 				929236251D9AF24000B49E53 /* Scene2ViewController.swift in Sources */,
 			);
@@ -292,6 +296,7 @@
 				929236231D9AF08400B49E53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
