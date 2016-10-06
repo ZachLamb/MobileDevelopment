@@ -50,6 +50,10 @@ class Scene2ViewController: UIViewController, UITextFieldDelegate {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func textFieldDoneEditing(sender: UITextField) {
+        sender.resignFirstResponder()
+    }
+    
 
     /*
     // MARK: - Navigation
