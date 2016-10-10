@@ -23,7 +23,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="p6Z-ie-zp7">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p6Z-ie-zp7">
                                 <rect key="frame" x="133" y="236" width="334" height="291"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="231" id="Jbc-Lu-vES"/>
@@ -85,8 +85,8 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="zai-YK-bb3"/>
                                 <exclude reference="S2C-0h-jaU"/>
+                                <exclude reference="zai-YK-bb3"/>
                                 <exclude reference="hBx-6g-rEB"/>
                             </mask>
                         </variation>
@@ -95,8 +95,8 @@
                                 <include reference="Nyo-1E-H3R"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="zai-YK-bb3"/>
                                 <include reference="S2C-0h-jaU"/>
+                                <include reference="zai-YK-bb3"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular">
