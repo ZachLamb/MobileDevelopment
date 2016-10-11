@@ -24,7 +24,7 @@
                                     <constraint firstAttribute="width" constant="50" id="duJ-Sr-SQl"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -44,7 +44,7 @@
                                     <constraint firstAttribute="width" constant="18" id="eVW-m5-j7F"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -64,7 +64,7 @@
                                     <constraint firstAttribute="height" constant="25" id="dBU-P9-biH"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -80,7 +80,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1u8-OK-MFV">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="63" y="-80" width="0.0" height="0.0"/>
@@ -128,8 +128,8 @@
                                 </constraints>
                                 <variation key="widthClass=compact">
                                     <mask key="constraints">
-                                        <include reference="eNe-Tc-bTL"/>
                                         <include reference="LbU-R3-0PE"/>
+                                        <include reference="eNe-Tc-bTL"/>
                                     </mask>
                                 </variation>
                             </imageView>
@@ -287,7 +287,6 @@
                                 <include reference="MzQ-J2-1fh"/>
                                 <include reference="bMS-8z-avo"/>
                                 <exclude reference="lVW-Vd-BEZ"/>
-                                <exclude reference="yje-HI-2vD"/>
                                 <include reference="62d-it-0bS"/>
                                 <include reference="IQK-yi-ClR"/>
                                 <include reference="Jt8-Qb-zrL"/>
@@ -295,6 +294,7 @@
                                 <exclude reference="Zae-Nx-Og3"/>
                                 <include reference="gFk-mI-bhc"/>
                                 <include reference="v01-8l-9IO"/>
+                                <exclude reference="yje-HI-2vD"/>
                                 <exclude reference="7X3-RZ-dCS"/>
                                 <include reference="gaI-eu-z1E"/>
                                 <exclude reference="xTd-SL-DbV"/>

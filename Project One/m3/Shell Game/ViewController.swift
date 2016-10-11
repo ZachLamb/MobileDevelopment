@@ -102,7 +102,7 @@ class ViewController: UIViewController {
         })
         alert.addAction(okAction)
         //present alert
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, Int64(Double(NSEC_PER_SEC) * 0.3)), dispatch_get_main_queue()) {
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, Int64(Double(NSEC_PER_SEC) * 0.7)), dispatch_get_main_queue()) {
             self.presentViewController(alert, animated: true, completion: nil)
         }
     }
