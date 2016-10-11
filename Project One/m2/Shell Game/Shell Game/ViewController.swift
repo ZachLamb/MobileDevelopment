@@ -21,12 +21,12 @@ class ViewController: UIViewController {
     
     var currentCup : String = ""
     var ballPosition : String = ""
-    var ballPossiblities = Int()
     let balls = ["cupOne","cupTwo","cupThree"]
     let winTitle : String = "You Won!"
     let win : String = "Congratulations!"
     let loseTitle : String = "You Lost"
     let lose : String = "Oh, no try again!"
+    var didWin : String = ""
     
     
     override func viewDidLoad() {
@@ -45,7 +45,7 @@ class ViewController: UIViewController {
         if(event!.subtype == UIEventSubtype.MotionShake) {
             reset()
             self.dismissViewControllerAnimated(true, completion: nil)
-            moveCupBack(currentCup)
+            moveCupBack(currentCup,myMessage: didWin)
             
         }
     }
@@ -70,21 +70,24 @@ class ViewController: UIViewController {
         }
         
     }
-    func moveCupBack(myCup: String){
+    func moveCupBack(myCup: String,myMessage: String){
         if(myCup == "cupOne"){
             let position = self.cupOne.frame.origin
-            self.cupOne.frame.origin=CGPoint(x: position.x, y: position.y+120)
+            self.cupOne.frame.origin=CGPoint(x: position.x, y: position.y+60)
             self.reset()
         }
         else if(myCup == "cupTwo"){
             let position = self.cupTwo.frame.origin
-            self.cupTwo.frame.origin=CGPoint(x: position.x, y: position.y+120)
+            self.cupTwo.frame.origin=CGPoint(x: position.x, y: position.y+60)
             self.reset()
         }
         else{
             let position = self.cupThree.frame.origin
-            self.cupThree.frame.origin=CGPoint(x: position.x, y: position.y+120)
+            self.cupThree.frame.origin=CGPoint(x: position.x, y: position.y+60)
             self.reset()
+        }
+        if(myMessage == self.win){
+            self.score.text = String((Int(self.score.text!)!+1))
         }
     }
     func myAlert(myTitle: String,myMessage: String,myCup: String) {
@@ -94,11 +97,8 @@ class ViewController: UIViewController {
         let okAction = UIAlertAction(title: "Continue", style:
             UIAlertActionStyle.Default, handler: { action in
                 UIView.animateWithDuration(0.1, animations: {
-                    self.moveCupBack(myCup)
+                    self.moveCupBack(myCup,myMessage: myMessage)
                     },completion: nil)
-                if(myMessage == self.win){
-                    self.score.text = String((Int(self.score.text!)!+1))
-                }
         })
         alert.addAction(okAction)
         //present alert
@@ -117,26 +117,28 @@ class ViewController: UIViewController {
         UIView.animateWithDuration(0.1, animations: {
             if(whichCup == "cupOne"){
                 let position = self.cupOne.frame.origin
-                self.cupOne.frame.origin=CGPoint(x: position.x, y: position.y-120)
+                self.cupOne.frame.origin=CGPoint(x: position.x, y: position.y-60)
             }
             else if(whichCup == "cupTwo"){
                 let position = self.cupTwo.frame.origin
-                self.cupTwo.frame.origin=CGPoint(x: position.x, y: position.y-120)
+                self.cupTwo.frame.origin=CGPoint(x: position.x, y: position.y-60)
             }
             else{
                 let position = self.cupThree.frame.origin
-                self.cupThree.frame.origin=CGPoint(x: position.x, y: position.y-120)
+                self.cupThree.frame.origin=CGPoint(x: position.x, y: position.y-60)
             }
             },completion: nil)
         
                 if(self.ballPosition == whichCup){
                     alertTitle = self.winTitle
                     alertMessage = self.win
+                    didWin = self.win
                     self.myAlert(alertTitle,myMessage: alertMessage, myCup: whichCup!)
                 }
                 else if(self.ballPosition != whichCup){
                     alertTitle = self.loseTitle
                     alertMessage = self.lose
+                    didWin = self.lose
                     self.myAlert(alertTitle,myMessage: alertMessage, myCup: whichCup!)
                 }
     }
