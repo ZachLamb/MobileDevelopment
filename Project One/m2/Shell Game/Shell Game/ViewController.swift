@@ -13,48 +13,106 @@ class ViewController: UIViewController {
     @IBOutlet weak var cupOne: UIButton!
     @IBOutlet weak var cupTwo: UIButton!
     @IBOutlet weak var cupThree: UIButton!
-    @IBOutlet weak var ball: UIImageView!
+    @IBOutlet weak var ball1: UIImageView!
+    @IBOutlet weak var ball2: UIImageView!
+    @IBOutlet weak var ball3: UIImageView!
+    
     @IBOutlet weak var score: UILabel!
     
-    
-    var ballPosition : String?
-    var ballPossiblities = [CGPoint]()
+    var currentCup : String = ""
+    var ballPosition : String = ""
+    var ballPossiblities = Int()
     let balls = ["cupOne","cupTwo","cupThree"]
     let winTitle : String = "You Won!"
-    let win : String = "You Win!"
+    let win : String = "Congratulations!"
     let loseTitle : String = "You Lost"
-    let lose : String = "Oh, no you lose :("
+    let lose : String = "Oh, no try again!"
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.becomeFirstResponder()
         score.text=String(0)
         reset()
         
     }
     
+    override func canBecomeFirstResponder() -> Bool {
+        return true
+    }
+    
+    override func motionEnded(motion: UIEventSubtype, withEvent event: UIEvent?) {
+        if(event!.subtype == UIEventSubtype.MotionShake) {
+            reset()
+            self.dismissViewControllerAnimated(true, completion: nil)
+            moveCupBack(currentCup)
+            
+        }
+    }
+
+    
     func reset() {
         ballPosition = balls[Int(arc4random_uniform(UInt32(balls.count)))]
-        ballPossiblities = [self.cupOne.frame.origin,self.cupTwo.frame.origin,self.cupThree.frame.origin]
         if(ballPosition == "cupOne"){
-            let position = ballPossiblities[0]
-            ball.frame.origin=CGPoint(x: position.x,y: position.y)
+            ball1.hidden=false
+            ball2.hidden=true
+            ball3.hidden=true
         }
         else if(ballPosition == "cupTwo"){
-            let position = ballPossiblities[1]
-            ball.frame.origin=CGPoint(x: position.x,y: position.y)
+            ball2.hidden=false
+            ball1.hidden=true
+            ball3.hidden=true
         }
         else if(ballPosition == "cupThree"){
-            let position = ballPossiblities[2]
-            ball.frame.origin=CGPoint(x: position.x,y: position.y)
+            ball3.hidden=false
+            ball2.hidden=true
+            ball1.hidden=true
+        }
+        
+    }
+    func moveCupBack(myCup: String){
+        if(myCup == "cupOne"){
+            let position = self.cupOne.frame.origin
+            self.cupOne.frame.origin=CGPoint(x: position.x, y: position.y+120)
+            self.reset()
+        }
+        else if(myCup == "cupTwo"){
+            let position = self.cupTwo.frame.origin
+            self.cupTwo.frame.origin=CGPoint(x: position.x, y: position.y+120)
+            self.reset()
+        }
+        else{
+            let position = self.cupThree.frame.origin
+            self.cupThree.frame.origin=CGPoint(x: position.x, y: position.y+120)
+            self.reset()
+        }
+    }
+    func myAlert(myTitle: String,myMessage: String,myCup: String) {
+        
+        let alert=UIAlertController(title: myTitle, message: myMessage, preferredStyle:
+            UIAlertControllerStyle.Alert)
+        let okAction = UIAlertAction(title: "Continue", style:
+            UIAlertActionStyle.Default, handler: { action in
+                UIView.animateWithDuration(0.1, animations: {
+                    self.moveCupBack(myCup)
+                    },completion: nil)
+                if(myMessage == self.win){
+                    self.score.text = String((Int(self.score.text!)!+1))
+                }
+        })
+        alert.addAction(okAction)
+        //present alert
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, Int64(Double(NSEC_PER_SEC) * 0.3)), dispatch_get_main_queue()) {
+            self.presentViewController(alert, animated: true, completion: nil)
         }
     }
     
     @IBAction func chooseCup(sender: AnyObject) {
         
         let whichCup = sender.titleLabel!!.text
-        var alertTitle : String?
-        var alertMessage : String?
+        var alertTitle : String
+        var alertMessage : String
+        currentCup = whichCup!
         
         UIView.animateWithDuration(0.1, animations: {
             if(whichCup == "cupOne"){
@@ -71,48 +129,16 @@ class ViewController: UIViewController {
             }
             },completion: nil)
         
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, Int64(Double(NSEC_PER_SEC) * 0.3)), dispatch_get_main_queue()) {
                 if(self.ballPosition == whichCup){
-                    print(whichCup)
                     alertTitle = self.winTitle
                     alertMessage = self.win
+                    self.myAlert(alertTitle,myMessage: alertMessage, myCup: whichCup!)
                 }
                 else if(self.ballPosition != whichCup){
-                    print(self.ballPosition)
                     alertTitle = self.loseTitle
                     alertMessage = self.lose
+                    self.myAlert(alertTitle,myMessage: alertMessage, myCup: whichCup!)
                 }
-                //create a UIAlertController object
-                let alert=UIAlertController(title: alertTitle, message: alertMessage, preferredStyle:
-                    UIAlertControllerStyle.Alert)
-                let okAction = UIAlertAction(title: "Continue", style:
-                    UIAlertActionStyle.Default, handler: { action in
-                        UIView.animateWithDuration(0.1, animations: {
-                            if(whichCup == "cupOne"){
-                                let position = self.cupOne.frame.origin
-                                self.cupOne.frame.origin=CGPoint(x: position.x, y: position.y+120)
-                                self.reset()
-                            }
-                            else if(whichCup == "cupTwo"){
-                                let position = self.cupTwo.frame.origin
-                                self.cupTwo.frame.origin=CGPoint(x: position.x, y: position.y+120)
-                                self.reset()
-                            }
-                            else{
-                                let position = self.cupThree.frame.origin
-                                self.cupThree.frame.origin=CGPoint(x: position.x, y: position.y+120)
-                                self.reset()
-                            }
-                            },completion: nil)
-                        if(alertMessage == self.win){
-                        self.score.text = String((Int(self.score.text!)!+1))
-                        }
-                })
-                alert.addAction(okAction)
-                //present alert
-                self.presentViewController(alert, animated: true, completion: nil)
-            
-        }
     }
 
     
@@ -121,30 +147,5 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    //object
-    //cups
-    //buttons
-    //alerts
-    //labels
-    //score
-//    alert with table view
-//    function addNewUser(textField){
-//        create new user here
-//    }
-//    function selectExistingUser(table){
-//        return selected user
-//    }
-//    
-//    signOut(){
-//    sign out user and return to alert asking user to sign-in/up
-//    }
-//    
-//    putObjectUnderCup(){
-//    call random function to put object undercup
-//    }
-//    selectedCup(){
-//    return if it is the right cup, and display result
-//    also, update score if user selected correct cup
-//    }
 }
 
