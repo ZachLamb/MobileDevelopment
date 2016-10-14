@@ -24,6 +24,7 @@ class ViewController: UIViewController {
     let bikeCals = 510.00
     let swimPace = 30.00
     let swimCals = 420.00
+    var workFrequency = 3
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,8 +49,24 @@ class ViewController: UIViewController {
         //present alert
         presentViewController(alert, animated: true, completion: nil)
         }
-        miles.text=String(format: "%.01f",pacePerMins/Double(workoutTime.text!)!)
-        calories.text=String(format: "%.01f",caloriesPerHour/Double(workoutTime.text!)!)
+        if(workoutType.selectedSegmentIndex==0){
+            //run
+            workoutImage.image=UIImage(named: "run.png")
+            miles.text=String(format: "%.01f",pacePerMins/Double(workoutTime.text!)!)
+            calories.text=String(format: "%.01f",caloriesPerHour/Double(workoutTime.text!)!)
+        }
+        else if(workoutType.selectedSegmentIndex==1){
+            //swim
+            workoutImage.image=UIImage(named: "swim.png")
+            miles.text=String(format: "%.01f",swimPace/Double(workoutTime.text!)!)
+            calories.text=String(format: "%.01f",swimCals/Double(workoutTime.text!)!)
+        }
+        else if(workoutType.selectedSegmentIndex==2){
+            //bike
+            workoutImage.image=UIImage(named: "bike.png")
+            miles.text=String(format: "%.01f",bikePace/Double(workoutTime.text!)!)
+            calories.text=String(format: "%.01f",bikeCals/Double(workoutTime.text!)!)
+        }
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -98,6 +115,7 @@ class ViewController: UIViewController {
         }
         
     }
+    
     
 }
 
