@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "midterm/ViewController.swift"
-            timestampString = "498166926.808631"
+            timestampString = "498169478.754451"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
             landmarkName = "calculateWorkout(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "midterm/ViewController.swift"
-            timestampString = "498167056.278204"
+            timestampString = "498169478.754451"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
             landmarkName = "calculateWorkout(_:)"
             landmarkType = "5">
          </BreakpointContent>
