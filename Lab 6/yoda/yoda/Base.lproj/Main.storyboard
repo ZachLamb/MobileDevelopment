@@ -37,8 +37,18 @@
                         <action selector="handlePan:" destination="BYZ-38-t0r" id="kn1-i6-nkV"/>
                     </connections>
                 </panGestureRecognizer>
-                <pinchGestureRecognizer id="87W-V3-5hC"/>
-                <rotationGestureRecognizer id="J6G-y0-5tI"/>
+                <pinchGestureRecognizer id="87W-V3-5hC">
+                    <connections>
+                        <action selector="handlePinch:" destination="BYZ-38-t0r" id="cki-xu-jB9"/>
+                        <outlet property="delegate" destination="BL8-80-9PF" id="rXl-Kl-jwy"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <rotationGestureRecognizer id="J6G-y0-5tI">
+                    <connections>
+                        <action selector="handleRotate:" destination="BYZ-38-t0r" id="YiF-R6-FJV"/>
+                        <outlet property="delegate" destination="BL8-80-9PF" id="bLU-ks-UvZ"/>
+                    </connections>
+                </rotationGestureRecognizer>
                 <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="FFu-xz-1iy"/>
             </objects>
             <point key="canvasLocation" x="305" y="429"/>
