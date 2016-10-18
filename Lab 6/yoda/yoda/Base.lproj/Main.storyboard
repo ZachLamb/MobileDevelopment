@@ -35,6 +35,7 @@
                 <panGestureRecognizer minimumNumberOfTouches="1" id="1pB-Fb-Ava">
                     <connections>
                         <action selector="handlePan:" destination="BYZ-38-t0r" id="kn1-i6-nkV"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="2fh-nz-Osy"/>
                     </connections>
                 </panGestureRecognizer>
                 <pinchGestureRecognizer id="87W-V3-5hC">
@@ -45,11 +46,16 @@
                 </pinchGestureRecognizer>
                 <rotationGestureRecognizer id="J6G-y0-5tI">
                     <connections>
-                        <action selector="handleRotate:" destination="BYZ-38-t0r" id="YiF-R6-FJV"/>
+                        <action selector="handleRotate:" destination="BYZ-38-t0r" id="UQO-ZE-nyd"/>
                         <outlet property="delegate" destination="BL8-80-9PF" id="bLU-ks-UvZ"/>
                     </connections>
                 </rotationGestureRecognizer>
-                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="FFu-xz-1iy"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="FFu-xz-1iy">
+                    <connections>
+                        <action selector="handleLongPress:" destination="BYZ-38-t0r" id="Oja-4l-05J"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="kIV-nF-wnD"/>
+                    </connections>
+                </pongPressGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="305" y="429"/>
         </scene>

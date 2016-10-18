@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		922E7A5D1DB5C5BC002D7015 /* Tributaries_of_the_Bayou_Sting.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 922E7A5C1DB5C5BC002D7015 /* Tributaries_of_the_Bayou_Sting.mp3 */; };
 		9246FDBC1DA6C08E00B6C5EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9246FDBB1DA6C08E00B6C5EA /* AppDelegate.swift */; };
 		9246FDBE1DA6C08E00B6C5EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9246FDBD1DA6C08E00B6C5EA /* ViewController.swift */; };
 		9246FDC11DA6C08E00B6C5EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9246FDBF1DA6C08E00B6C5EA /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		922E7A5C1DB5C5BC002D7015 /* Tributaries_of_the_Bayou_Sting.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Tributaries_of_the_Bayou_Sting.mp3; sourceTree = "<group>"; };
 		9246FDB81DA6C08E00B6C5EA /* yoda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yoda.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9246FDBB1DA6C08E00B6C5EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9246FDBD1DA6C08E00B6C5EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 				9246FDC21DA6C08E00B6C5EA /* Assets.xcassets */,
 				9246FDC41DA6C08E00B6C5EA /* LaunchScreen.storyboard */,
 				9246FDC71DA6C08E00B6C5EA /* Info.plist */,
+				922E7A5C1DB5C5BC002D7015 /* Tributaries_of_the_Bayou_Sting.mp3 */,
 			);
 			path = yoda;
 			sourceTree = "<group>";
@@ -94,6 +97,9 @@
 		9246FDB01DA6C08E00B6C5EA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					New,
+				);
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Zach Lamb";
@@ -127,6 +133,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9246FDC61DA6C08E00B6C5EA /* LaunchScreen.storyboard in Resources */,
+				922E7A5D1DB5C5BC002D7015 /* Tributaries_of_the_Bayou_Sting.mp3 in Resources */,
 				9246FDC31DA6C08E00B6C5EA /* Assets.xcassets in Resources */,
 				9246FDC11DA6C08E00B6C5EA /* Main.storyboard in Resources */,
 			);
