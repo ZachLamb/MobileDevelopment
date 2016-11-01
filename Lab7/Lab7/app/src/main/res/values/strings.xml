@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Lab7</string>
+    <string name="name_edit">Name</string>
+    <string name="mood_button">Mood</string> <string name="feeling"></string>
+    <string-array name="moods"> <item>happy</item> <item>sad</item> <item>confused</item> <item>angry</item>
+    </string-array>
+    <string name="toggle_on">positive</string>
+    <string name="toggle_off">negative</string>
+    <string name="meditate_switch">Meditate</string>
+</resources>
