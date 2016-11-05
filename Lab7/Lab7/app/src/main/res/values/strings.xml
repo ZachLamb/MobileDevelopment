@@ -1,10 +1,13 @@
 <resources>
-    <string name="app_name">Lab7</string>
+    <string name="app_name">What Percent Lorelai Gilmore are you?</string>
     <string name="name_edit">Name</string>
-    <string name="mood_button">Mood</string> <string name="feeling"></string>
-    <string-array name="moods"> <item>happy</item> <item>sad</item> <item>confused</item> <item>angry</item>
+    <string name="mood_button">How Lorelai am I?</string>
+    <string name="feeling"></string>
+    <string-array name="breakfast_foods"> <item>Grapefruit</item> <item>Oatmeal</item> <item>Poptart</item> <item>Cereal</item>
     </string-array>
-    <string name="toggle_on">positive</string>
-    <string name="toggle_off">negative</string>
-    <string name="meditate_switch">Meditate</string>
+    <string name="toggle_on">Chris</string>
+    <string name="toggle_off">Luke</string>
+    <string name="meditate_switch">Do you exercise?</string>
+    <string name="coffeeNo">Nah, not right now</string>
+    <string name="coffeeYes">Yes, in an IV!</string>
 </resources>

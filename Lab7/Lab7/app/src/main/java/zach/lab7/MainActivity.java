@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-    public void findMood(View view){
+    public void lorelaiGilmore(View view){
         EditText name = (EditText) findViewById(R.id.nameEditText);
         String nameValue = name.getText().toString();
         TextView feeling = (TextView) findViewById(R.id.feelingTextView);
