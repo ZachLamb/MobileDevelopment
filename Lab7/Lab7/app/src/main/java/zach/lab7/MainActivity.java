@@ -23,20 +23,17 @@ public class MainActivity extends AppCompatActivity {
         Spinner moodSpinner = (Spinner) findViewById(R.id.spinner);
         String moodValue = String.valueOf(moodSpinner.getSelectedItem());
         ToggleButton toggle = (ToggleButton) findViewById(R.id.energyToggleButton); boolean energy = toggle.isChecked();
-        String energyString;
+        String percentString;
         if(energy) {
-            energyString = "positive";
+            percentString = "positive";
         }
         else {
-            energyString="negative";
+            percentString="negative";
         }
-        String meditate_string = "";
         Switch meditate_switch = (Switch) findViewById(R.id.meditate_switch);
         boolean meditate = meditate_switch.isChecked();
-        if(meditate){
-            meditate_string = " that meditates";
-        }
-        feeling.setText(nameValue + " is a " + energyString + " person in a " + moodValue + " mood");
+
+        feeling.setText(nameValue + " is " + percentString + " % Lorelai Gilmore");
     }
 
 }

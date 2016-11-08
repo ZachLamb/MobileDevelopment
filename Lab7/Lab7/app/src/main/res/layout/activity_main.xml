@@ -21,24 +21,12 @@
         android:id="@+id/nameEditText" />
 
     <TextView
-        android:text="@string/feeling"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="45dp"
         android:id="@+id/feelingTextView" />
-
-    <ToggleButton
-        android:text="ToggleButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textOn="@string/toggle_on"
-        android:textOff="@string/toggle_off"
-        android:layout_marginTop="22dp"
-        android:id="@+id/energyToggleButton"
-        android:layout_below="@+id/spinner"
-        android:layout_toStartOf="@+id/button" />
 
     <Switch
         android:text="@string/meditate_switch"
@@ -48,22 +36,6 @@
         android:layout_alignBaseline="@+id/energyToggleButton"
         android:layout_alignBottom="@+id/energyToggleButton"
         android:layout_alignEnd="@+id/nameEditText" />
-
-    <Spinner
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="54dp"
-        android:id="@+id/spinner"
-        android:entries="@array/breakfast_foods"
-        android:layout_below="@+id/nameEditText"
-        android:layout_alignParentStart="true" />
-
-    <RatingBar
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/ratingBar"
-        android:layout_below="@+id/nameEditText"
-        android:layout_centerHorizontal="true" />
 
     <Button
         android:text="@string/mood_button"
@@ -92,4 +64,59 @@
         tools:text="@string/coffeeNo"
         android:layout_above="@+id/radioButton2"
         android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/radioButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"
+        android:id="@+id/textView"
+        tools:text="@string/coffee_question" />
+
+    <ToggleButton
+        android:text="ToggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOn="@string/toggle_on"
+        android:textOff="@string/toggle_off"
+        android:id="@+id/energyToggleButton"
+        android:layout_above="@+id/textView"
+        android:layout_toStartOf="@+id/button"
+        android:layout_marginBottom="19dp" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingBar"
+        android:layout_below="@+id/nameEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:entries="@array/breakfast_foods"
+        android:layout_above="@+id/energyToggleButton"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameEditText"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView2"
+        tools:text="@string/ratingsBarQuestion" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ratingBar"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView3"
+        tools:text="@string/breakfastQuestion" />
 </RelativeLayout>
