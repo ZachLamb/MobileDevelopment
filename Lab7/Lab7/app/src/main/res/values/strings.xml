@@ -1,9 +1,9 @@
 <resources>
-    <string name="app_name">What Percent Lorelai Gilmore are you?</string>
+    <string name="app_name">What % Lorelai Gilmore are you?</string>
     <string name="name_edit">Name</string>
-    <string name="ratingsBarQuestion">Please rate the name Paul Anka</string>
+    <string name="ratingsBarQuestion">Please rate the name "Paul Anka"</string>
     <string name="mood_button">How Lorelai am I?</string>
-    <string name="breakfastQuestion">What's your favorite breakfast food?</string>
+    <string name="breakfastQuestion">What is your favorite breakfast food?</string>
     <string-array name="breakfast_foods"> <item>Grapefruit</item> <item>Oatmeal</item> <item>Poptart</item> <item>Cereal</item>
     </string-array>
     <string name="toggle_on">Chris</string>
