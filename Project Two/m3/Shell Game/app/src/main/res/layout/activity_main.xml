@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="zach.milestonetwo.MainActivity">
+
+    <ImageView
+        android:layout_width="70dp"
+        app:srcCompat="@drawable/ball"
+        android:id="@+id/imageView3"
+        app:layout_constraintLeft_toLeftOf="@+id/three"
+        android:layout_marginTop="280dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_height="70dp"
+        app:layout_constraintHorizontal_bias="0.71" />
+
+    <ImageView
+        android:layout_width="70dp"
+        app:srcCompat="@drawable/ball"
+        android:id="@+id/imageView2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="280dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_height="70dp"
+        app:layout_constraintHorizontal_bias="0.47" />
+
+    <ImageView
+        app:srcCompat="@drawable/ball"
+        android:id="@+id/imageView"
+        android:layout_width="70dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="280dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_height="70dp" />
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/cup"
+        android:id="@+id/three"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="248dp"
+        android:layout_marginStart="248dp"
+        android:onClick="pickImage" />
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/cup"
+        android:id="@+id/one"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="pickImage"
+        app:layout_constraintRight_toLeftOf="@+id/imageView2"
+        android:layout_marginEnd="24dp" />
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="0dp"
+        app:srcCompat="@drawable/cup"
+        android:id="@+id/two"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/three"
+        app:layout_constraintRight_toRightOf="@+id/one"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/three"
+        app:layout_constraintTop_toTopOf="@+id/three"
+        android:layout_marginLeft="126dp"
+        android:layout_marginRight="126dp"
+        android:layout_marginStart="126dp"
+        android:layout_marginEnd="126dp"
+        android:onClick="pickImage"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:text="@string/score"
+        android:textSize="20sp"
+        app:layout_constraintRight_toLeftOf="@+id/currentScore"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.87"
+        android:layout_marginTop="472dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/currentScore"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        android:textSize="20sp"
+        app:layout_constraintRight_toLeftOf="@+id/three"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintVertical_bias="0.0" />
+
+</android.support.constraint.ConstraintLayout>
