@@ -52,11 +52,6 @@ public class MainActivity extends AppCompatActivity {
                 break;
         }
 
-        //check if ball under that cup is activated
-        //if( imagePicked == ballIsUnder){ printAlert("you win!")
-        //else {pick again!}
-        //call function to display alert with results
-        //call function resetCups()
     }
     public void resetCups(String number,ImageButton imagePick){
         ImageView cupOne = (ImageView)findViewById(R.id.imageView);
