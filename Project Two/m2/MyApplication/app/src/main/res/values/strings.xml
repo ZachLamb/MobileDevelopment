@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">MilestoneTwo</string>
+    <string name="app_name">Shell Game</string>
+    <string name="score">Score: </string>
 </resources>
