@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Ice Cream</string>
     <string name="title">I Scream for Ice Scream</string>
-    <string name="myTreat">Treat Yo'self!</string>
+    <string name="myTreat">Treat Yo self!</string>
     <string name="findTreat">Find Treat</string>
     <string name="treatField">Enter what you want...</string>
     <string name="dairy">Dairy-free</string>
@@ -10,4 +10,8 @@
         <item>Cookie Dough</item>
         <item>Cookies and Cream</item>
     </string-array>
+    <string name="toggle_cup">Cup</string>
+    <string name="toggle_cone">Cone</string>
+    <string name="textview">TextView</string>
+    <string name="togglebutton">ToggleButton</string>
 </resources>
