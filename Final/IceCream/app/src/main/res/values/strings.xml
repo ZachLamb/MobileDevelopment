@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Ice Cream</string>
+    <string name="title">I Scream for Ice Scream</string>
+    <string name="myTreat">Treat Yo'self!</string>
+    <string name="findTreat">Find Treat</string>
+    <string name="treatField">Enter what you want...</string>
+    <string name="dairy">Dairy-free</string>
+    <string-array name="flavors">
+        <item>Pumpkin Pie</item>
+        <item>Cookie Dough</item>
+        <item>Cookies and Cream</item>
+    </string-array>
 </resources>
