@@ -6,7 +6,9 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Spinner;
+import android.widget.Switch;
 import android.widget.TextView;
+import android.widget.ToggleButton;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,6 +24,25 @@ public class MainActivity extends AppCompatActivity {
         Spinner flavorSpinner = (Spinner) findViewById(R.id.spinner);
         String flavorValue = String.valueOf(flavorSpinner.getSelectedItem());
 
+
+        Switch dairySwitch = (Switch) findViewById(R.id.switchDairy);
+        boolean dairyFree = dairySwitch.isChecked();
+        String dairyAllergy = "";
+        if(dairyFree){
+            dairyAllergy = " that is dairy-free";
+        }
+//        ToggleButton toggle = (ToggleButton)findViewById(R.id.toggleButton);
+//        boolean isCup = toggle.isChecked();
+//        String cupOrCone;
+//        if(!isCup){
+//            cupOrCone = "cone";
+//        }
+//        else{
+//            cupOrCone = "cup";
+//        }
+
+
+
         TextView output =(TextView) findViewById(R.id.textViewOutput);
 
         ImageView img= (ImageView) findViewById(R.id.imageView);
@@ -36,6 +57,6 @@ public class MainActivity extends AppCompatActivity {
             img.setImageResource(R.drawable.cookiescream);
         }
 
-        output.setText("My favorite\n" + mealValue + " is\n" + flavorValue);
+        output.setText("My favorite\n" + mealValue + " is\n" +  flavorValue  + "\n" + dairyAllergy);
     }
 }
