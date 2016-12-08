@@ -1,5 +1,6 @@
 package zach.icecream;
 
+import android.os.StrictMode;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -11,6 +12,22 @@ import android.widget.TextView;
 import android.widget.ToggleButton;
 
 public class MainActivity extends AppCompatActivity {
+
+    private iceCreamShop myIceCreamShop = new iceCreamShop();
+
+    public void findIceCream(View view){
+        Spinner myFlavor = (Spinner) findViewById(R.id.spinner);
+
+        Integer flavorCrowd = myFlavor.getSelectedItemPosition();
+
+        myIceCreamShop.setIceCreamShop(flavorCrowd);
+
+        String suggestedIceCreamShop = myIceCreamShop.getIceCreamShop();
+        String suggestedIceCreamShopURL = myIceCreamShop.getIceCreamShopURL();
+//        System.out.println(suggestedIceCreamShop);
+//        System.out.println(suggestedIceCreamShopURL);
+
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
