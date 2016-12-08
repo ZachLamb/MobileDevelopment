@@ -4,7 +4,7 @@ package zach.icecream;
  * Created by zach on 12/8/16.
  */
 
-public class iceCreamShop {
+public class IceCreamShop {
     private String iceCreamShop;
     private String getIceCreamURL;
 
