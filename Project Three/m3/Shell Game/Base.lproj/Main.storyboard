@@ -212,13 +212,16 @@
                                     <action selector="chooseCup:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rHI-bZ-ofd"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uC4-BI-J7e">
-                                <rect key="frame" x="248" y="489" width="103" height="30"/>
-                                <state key="normal" title="Holiday Theme"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="CRj-LB-FqJ">
+                                <rect key="frame" x="241" y="488" width="121" height="29"/>
+                                <segments>
+                                    <segment title="Holiday"/>
+                                    <segment title="Regular"/>
+                                </segments>
                                 <connections>
-                                    <action selector="holidayTheme:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jd8-o1-mbf"/>
+                                    <action selector="changeTheme:" destination="BYZ-38-t0r" eventType="valueChanged" id="7Lq-29-Dpi"/>
                                 </connections>
-                            </button>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -229,6 +232,9 @@
                             </constraint>
                             <constraint firstItem="ntD-4t-Bv7" firstAttribute="leading" secondItem="WYL-uo-7pT" secondAttribute="trailing" constant="21" id="7X3-RZ-dCS"/>
                             <constraint firstItem="jgB-pI-4y8" firstAttribute="baseline" secondItem="WYL-uo-7pT" secondAttribute="baseline" id="Esb-5z-rjL"/>
+                            <constraint firstItem="CRj-LB-FqJ" firstAttribute="top" secondItem="ntD-4t-Bv7" secondAttribute="bottom" constant="17" id="G58-Hs-vpG">
+                                <variation key="heightClass=compact" constant="92"/>
+                            </constraint>
                             <constraint firstItem="nuw-c3-HYb" firstAttribute="leading" secondItem="cc1-2f-hyy" secondAttribute="trailing" constant="21" id="IDZ-nl-DE3"/>
                             <constraint firstItem="WYL-uo-7pT" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="IQK-yi-ClR"/>
                             <constraint firstItem="WYL-uo-7pT" firstAttribute="centerY" secondItem="iJo-Eb-lgk" secondAttribute="centerY" id="Jt8-Qb-zrL"/>
@@ -250,9 +256,9 @@
                             <constraint firstItem="Lbd-kX-LxZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="140" id="bMS-8z-avo">
                                 <variation key="heightClass=compact" constant="157"/>
                             </constraint>
-                            <constraint firstItem="uC4-BI-J7e" firstAttribute="top" secondItem="ntD-4t-Bv7" secondAttribute="bottom" constant="18" id="bxM-Cb-LSk"/>
                             <constraint firstItem="WYL-uo-7pT" firstAttribute="centerY" secondItem="nuw-c3-HYb" secondAttribute="centerY" id="gFk-mI-bhc"/>
                             <constraint firstItem="ntD-4t-Bv7" firstAttribute="leading" secondItem="WYL-uo-7pT" secondAttribute="trailing" constant="21" id="gaI-eu-z1E"/>
+                            <constraint firstItem="CRj-LB-FqJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hsp-Vi-jzX"/>
                             <constraint firstItem="Lbd-kX-LxZ" firstAttribute="top" secondItem="jgB-pI-4y8" secondAttribute="bottom" constant="227" id="lVW-Vd-BEZ">
                                 <variation key="heightClass=compact" constant="109"/>
                             </constraint>
@@ -267,7 +273,6 @@
                             <constraint firstItem="cc1-2f-hyy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="19" id="yp6-75-FbD">
                                 <variation key="heightClass=compact" constant="146"/>
                             </constraint>
-                            <constraint firstItem="uC4-BI-J7e" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="z3o-ur-KVJ"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
@@ -324,8 +329,8 @@
                         <outlet property="cupOne" destination="cc1-2f-hyy" id="TVZ-XL-X0l"/>
                         <outlet property="cupThree" destination="iJo-Eb-lgk" id="CC8-5t-gIK"/>
                         <outlet property="cupTwo" destination="nuw-c3-HYb" id="LtC-4J-uWw"/>
-                        <outlet property="holidayButton" destination="uC4-BI-J7e" id="Gae-rh-no0"/>
                         <outlet property="score" destination="ntD-4t-Bv7" id="VxP-He-ssV"/>
+                        <outlet property="switchTheme" destination="CRj-LB-FqJ" id="amT-AH-lfS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var ball2: UIImageView!
     @IBOutlet weak var ball3: UIImageView!
     @IBOutlet weak var result: UILabel!
-    @IBOutlet weak var holidayButton: UIButton!
+    @IBOutlet weak var switchTheme: UISegmentedControl!
     
     @IBOutlet weak var score: UILabel!
     
@@ -45,22 +45,22 @@ class ViewController: UIViewController {
     override func canBecomeFirstResponder() -> Bool {
         return true
     }
-    
-    @IBAction func holidayTheme(sender: AnyObject) {
-        cupOne.setImage(UIImage(named: "tree"),forState: .Normal)
-        cupTwo.setImage(UIImage(named: "tree"),forState: .Normal)
-        cupThree.setImage(UIImage(named: "tree"),forState: .Normal)
-        ball1.image=UIImage(named: "christmasOrn")
-        ball2.image=UIImage(named: "christmasOrn")
-        ball3.image=UIImage(named: "christmasOrn")
-        
-    }
-    override func motionEnded(motion: UIEventSubtype, withEvent event: UIEvent?) {
-        if(event!.subtype == UIEventSubtype.MotionShake) {
-            resetBall()
-            self.dismissViewControllerAnimated(true, completion: nil)
-            moveCupBack(currentCup,myMessage: didWin)
-            
+    @IBAction func changeTheme(sender: UISegmentedControl) {
+        if switchTheme.selectedSegmentIndex == 0 {
+            cupOne.setImage(UIImage(named: "tree"),forState: .Normal)
+            cupTwo.setImage(UIImage(named: "tree"),forState: .Normal)
+            cupThree.setImage(UIImage(named: "tree"),forState: .Normal)
+            ball1.image=UIImage(named: "christmasOrn")
+            ball2.image=UIImage(named: "christmasOrn")
+            ball3.image=UIImage(named: "christmasOrn")
+        }
+        else if switchTheme.selectedSegmentIndex == 1 {
+            cupOne.setImage(UIImage(named: "cup"),forState: .Normal)
+            cupTwo.setImage(UIImage(named: "cup"),forState: .Normal)
+            cupThree.setImage(UIImage(named: "cup"),forState: .Normal)
+            ball1.image=UIImage(named: "ball")
+            ball2.image=UIImage(named: "ball")
+            ball3.image=UIImage(named: "ball")
         }
     }
 
