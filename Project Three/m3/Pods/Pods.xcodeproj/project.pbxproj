@@ -1,0 +1,560 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0477F0E8CD5CD28503B22447F0C34439 /* Gifu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 458C88D4BEC1A8EA5335666C48B2BB50 /* Gifu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0B6A9B4748697EDBFAC8DF8EFE6A3A00 /* AnimatedFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90C2F6D0681EAA36C035865BFDA9AB2 /* AnimatedFrame.swift */; };
+		1CC07D11055B275963CDAE1B7D173026 /* Gifu.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B1DDE45D68BEB8B49C868AD84FEEF9D /* Gifu.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2255D9484D4ADCBE7545C97AE1D6C651 /* Gifu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CD90084FBBD51496B47F080F70A33C74 /* Gifu-dummy.m */; };
+		3BFEF6177FCEFEB4DBCF0CF84264258B /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648BAC27B9656E2ED493D48CA63837F0 /* ArrayExtension.swift */; };
+		5397D997A028E077ABC8896697744ECD /* ImageSourceHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEC3A21D864FB6B5D9B4D831B7D9AA4 /* ImageSourceHelpers.swift */; };
+		69347A070A2AC6095E4786C707FE864C /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA8C4D8ED7F3F53921209B8171CB461 /* Animator.swift */; };
+		80E4F7D1FC9B2D75F640F8B7E2272D7F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		8ACDFC2A515D256A05082190379E6083 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		A595EAFFCDC489F0A4998DE55BB98337 /* Pods-Shell Game-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B01958DE8DACF7E5D98CE4686065E8C6 /* Pods-Shell Game-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9A9A2D399E36816B77CD54C925780A7 /* AnimatableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB723F5CD7999E883AF486DFCC1877F /* AnimatableImageView.swift */; };
+		E182379D8B7489532411DD5CEB67B5DB /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E684883ABC9E64101D054F5FD2963E0 /* UIImageExtension.swift */; };
+		E5F183172B0887CE93090DA1557B47EB /* CGSizeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6997C14C8CB12CA871AA5F80973264E4 /* CGSizeExtension.swift */; };
+		FB991C8BFCE7F5FA83717055EC4FD684 /* Pods-Shell Game-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C83A0C12A5CD7D69BA32F578A3E72DF8 /* Pods-Shell Game-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		52619B0C950A16E9EB8CF93B8F69FE3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 409ADCBFD2F419AD0EC0DBDA0A848415;
+			remoteInfo = Gifu;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0B1DDE45D68BEB8B49C868AD84FEEF9D /* Gifu.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Gifu.h; path = Source/Gifu.h; sourceTree = "<group>"; };
+		11FB3D7A6435934BE11FF0E51CA4EE50 /* Pods-Shell Game.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Shell Game.modulemap"; sourceTree = "<group>"; };
+		228B03DFAD302D7A4774AD71048C3F6F /* Pods_Shell_Game.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Shell_Game.framework; path = "Pods-Shell Game.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A92EE1098B7E03C4CBB27F619BFAD02 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32920A686024D89EA38A055B233D7BB2 /* Gifu.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Gifu.xcconfig; sourceTree = "<group>"; };
+		3E684883ABC9E64101D054F5FD2963E0 /* UIImageExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIImageExtension.swift; path = Source/UIImageExtension.swift; sourceTree = "<group>"; };
+		458C88D4BEC1A8EA5335666C48B2BB50 /* Gifu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Gifu-umbrella.h"; sourceTree = "<group>"; };
+		4D6A8F463F3E4A95083A307399C7BEBC /* Pods-Shell Game-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Shell Game-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5DAB3A4455F270790AB07680B93A26AB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DEC3A21D864FB6B5D9B4D831B7D9AA4 /* ImageSourceHelpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageSourceHelpers.swift; path = Source/ImageSourceHelpers.swift; sourceTree = "<group>"; };
+		648BAC27B9656E2ED493D48CA63837F0 /* ArrayExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ArrayExtension.swift; path = Source/ArrayExtension.swift; sourceTree = "<group>"; };
+		6997C14C8CB12CA871AA5F80973264E4 /* CGSizeExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CGSizeExtension.swift; path = Source/CGSizeExtension.swift; sourceTree = "<group>"; };
+		7CCEB8C3047BC6984121CDD7B0C82712 /* Gifu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Gifu.framework; path = Gifu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EB723F5CD7999E883AF486DFCC1877F /* AnimatableImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimatableImageView.swift; path = Source/AnimatableImageView.swift; sourceTree = "<group>"; };
+		8F4C3DD94D0D1B49C29F4E299EA9B69B /* Pods-Shell Game.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Shell Game.debug.xcconfig"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A95DDB16CBDB0526859FB445BFAC311E /* Gifu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Gifu-prefix.pch"; sourceTree = "<group>"; };
+		B01958DE8DACF7E5D98CE4686065E8C6 /* Pods-Shell Game-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Shell Game-umbrella.h"; sourceTree = "<group>"; };
+		B1A522EBE078A769C98C72883275DBFB /* Pods-Shell Game.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Shell Game.release.xcconfig"; sourceTree = "<group>"; };
+		C83A0C12A5CD7D69BA32F578A3E72DF8 /* Pods-Shell Game-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Shell Game-dummy.m"; sourceTree = "<group>"; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CC9914E53EE6CECAB986CD5E20A6CCAA /* Pods-Shell Game-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Shell Game-acknowledgements.plist"; sourceTree = "<group>"; };
+		CD90084FBBD51496B47F080F70A33C74 /* Gifu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Gifu-dummy.m"; sourceTree = "<group>"; };
+		D7610356F9DE3B962F0DBC97CA513D48 /* Gifu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Gifu.modulemap; sourceTree = "<group>"; };
+		E1D98388642C8EF6402F925F87223E02 /* Pods-Shell Game-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Shell Game-resources.sh"; sourceTree = "<group>"; };
+		E6EF04DD161525707ABBB7F909FF7868 /* Pods-Shell Game-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Shell Game-frameworks.sh"; sourceTree = "<group>"; };
+		ECA8C4D8ED7F3F53921209B8171CB461 /* Animator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Animator.swift; path = Source/Animator.swift; sourceTree = "<group>"; };
+		F90C2F6D0681EAA36C035865BFDA9AB2 /* AnimatedFrame.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimatedFrame.swift; path = Source/AnimatedFrame.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8496FEEE5FE0AC0964D8EC91B6BF480C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80E4F7D1FC9B2D75F640F8B7E2272D7F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFB15513B33E605CDC5AB73D9EAC62DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8ACDFC2A515D256A05082190379E6083 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2A03C07DA295B465A359A0A84F37DA03 /* Gifu */ = {
+			isa = PBXGroup;
+			children = (
+				8EB723F5CD7999E883AF486DFCC1877F /* AnimatableImageView.swift */,
+				F90C2F6D0681EAA36C035865BFDA9AB2 /* AnimatedFrame.swift */,
+				ECA8C4D8ED7F3F53921209B8171CB461 /* Animator.swift */,
+				648BAC27B9656E2ED493D48CA63837F0 /* ArrayExtension.swift */,
+				6997C14C8CB12CA871AA5F80973264E4 /* CGSizeExtension.swift */,
+				0B1DDE45D68BEB8B49C868AD84FEEF9D /* Gifu.h */,
+				5DEC3A21D864FB6B5D9B4D831B7D9AA4 /* ImageSourceHelpers.swift */,
+				3E684883ABC9E64101D054F5FD2963E0 /* UIImageExtension.swift */,
+				A9B8D578705E2A620970D4D2FBDF2418 /* Support Files */,
+			);
+			name = Gifu;
+			path = Gifu;
+			sourceTree = "<group>";
+		};
+		5A382C76D3F3DB6C85787349C3455375 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7CCEB8C3047BC6984121CDD7B0C82712 /* Gifu.framework */,
+				228B03DFAD302D7A4774AD71048C3F6F /* Pods_Shell_Game.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				B98F4CDEA3EFDF4564B02EC9FF23DD37 /* Pods */,
+				5A382C76D3F3DB6C85787349C3455375 /* Products */,
+				C3EA45ED5F322C56A68E51D068DC03DE /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		A9B8D578705E2A620970D4D2FBDF2418 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D7610356F9DE3B962F0DBC97CA513D48 /* Gifu.modulemap */,
+				32920A686024D89EA38A055B233D7BB2 /* Gifu.xcconfig */,
+				CD90084FBBD51496B47F080F70A33C74 /* Gifu-dummy.m */,
+				A95DDB16CBDB0526859FB445BFAC311E /* Gifu-prefix.pch */,
+				458C88D4BEC1A8EA5335666C48B2BB50 /* Gifu-umbrella.h */,
+				5DAB3A4455F270790AB07680B93A26AB /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Gifu";
+			sourceTree = "<group>";
+		};
+		B98F4CDEA3EFDF4564B02EC9FF23DD37 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2A03C07DA295B465A359A0A84F37DA03 /* Gifu */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C3EA45ED5F322C56A68E51D068DC03DE /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EC45924148C089FA55A5DF6693894E30 /* Pods-Shell Game */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		EC45924148C089FA55A5DF6693894E30 /* Pods-Shell Game */ = {
+			isa = PBXGroup;
+			children = (
+				2A92EE1098B7E03C4CBB27F619BFAD02 /* Info.plist */,
+				11FB3D7A6435934BE11FF0E51CA4EE50 /* Pods-Shell Game.modulemap */,
+				4D6A8F463F3E4A95083A307399C7BEBC /* Pods-Shell Game-acknowledgements.markdown */,
+				CC9914E53EE6CECAB986CD5E20A6CCAA /* Pods-Shell Game-acknowledgements.plist */,
+				C83A0C12A5CD7D69BA32F578A3E72DF8 /* Pods-Shell Game-dummy.m */,
+				E6EF04DD161525707ABBB7F909FF7868 /* Pods-Shell Game-frameworks.sh */,
+				E1D98388642C8EF6402F925F87223E02 /* Pods-Shell Game-resources.sh */,
+				B01958DE8DACF7E5D98CE4686065E8C6 /* Pods-Shell Game-umbrella.h */,
+				8F4C3DD94D0D1B49C29F4E299EA9B69B /* Pods-Shell Game.debug.xcconfig */,
+				B1A522EBE078A769C98C72883275DBFB /* Pods-Shell Game.release.xcconfig */,
+			);
+			name = "Pods-Shell Game";
+			path = "Target Support Files/Pods-Shell Game";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		6777B21740E1D95183D4DB30274A3925 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0477F0E8CD5CD28503B22447F0C34439 /* Gifu-umbrella.h in Headers */,
+				1CC07D11055B275963CDAE1B7D173026 /* Gifu.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2C5EA74EC6502953A8C69B6ED8C627D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A595EAFFCDC489F0A4998DE55BB98337 /* Pods-Shell Game-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		409ADCBFD2F419AD0EC0DBDA0A848415 /* Gifu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99518D82AF1031CB46BE137A74D3E7B4 /* Build configuration list for PBXNativeTarget "Gifu" */;
+			buildPhases = (
+				2DE012669C6C0CF27324C1A94DCADF88 /* Sources */,
+				8496FEEE5FE0AC0964D8EC91B6BF480C /* Frameworks */,
+				6777B21740E1D95183D4DB30274A3925 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Gifu;
+			productName = Gifu;
+			productReference = 7CCEB8C3047BC6984121CDD7B0C82712 /* Gifu.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8C6BF52B4EDE4CE7A8EEC1A6D044874F /* Pods-Shell Game */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06644A4F843194DD00A9A52FE5764579 /* Build configuration list for PBXNativeTarget "Pods-Shell Game" */;
+			buildPhases = (
+				9ECD1A57A0EDC5DB2DD0C7B56B9884F6 /* Sources */,
+				CFB15513B33E605CDC5AB73D9EAC62DA /* Frameworks */,
+				A2C5EA74EC6502953A8C69B6ED8C627D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C38E3D4266D3C9F127CAD71919C53ED9 /* PBXTargetDependency */,
+			);
+			name = "Pods-Shell Game";
+			productName = "Pods-Shell Game";
+			productReference = 228B03DFAD302D7A4774AD71048C3F6F /* Pods_Shell_Game.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 5A382C76D3F3DB6C85787349C3455375 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				409ADCBFD2F419AD0EC0DBDA0A848415 /* Gifu */,
+				8C6BF52B4EDE4CE7A8EEC1A6D044874F /* Pods-Shell Game */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2DE012669C6C0CF27324C1A94DCADF88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9A9A2D399E36816B77CD54C925780A7 /* AnimatableImageView.swift in Sources */,
+				0B6A9B4748697EDBFAC8DF8EFE6A3A00 /* AnimatedFrame.swift in Sources */,
+				69347A070A2AC6095E4786C707FE864C /* Animator.swift in Sources */,
+				3BFEF6177FCEFEB4DBCF0CF84264258B /* ArrayExtension.swift in Sources */,
+				E5F183172B0887CE93090DA1557B47EB /* CGSizeExtension.swift in Sources */,
+				2255D9484D4ADCBE7545C97AE1D6C651 /* Gifu-dummy.m in Sources */,
+				5397D997A028E077ABC8896697744ECD /* ImageSourceHelpers.swift in Sources */,
+				E182379D8B7489532411DD5CEB67B5DB /* UIImageExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9ECD1A57A0EDC5DB2DD0C7B56B9884F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB991C8BFCE7F5FA83717055EC4FD684 /* Pods-Shell Game-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C38E3D4266D3C9F127CAD71919C53ED9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Gifu;
+			target = 409ADCBFD2F419AD0EC0DBDA0A848415 /* Gifu */;
+			targetProxy = 52619B0C950A16E9EB8CF93B8F69FE3C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		12F28A01E0D710FB0DE0CF5BDD5A9F3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F4C3DD94D0D1B49C29F4E299EA9B69B /* Pods-Shell Game.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Shell Game/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Shell Game/Pods-Shell Game.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Shell_Game;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		13E96A645A77DAD1FD4F541F18F5DDBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		2E362B21B87D416014B1C6751C48E221 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32920A686024D89EA38A055B233D7BB2 /* Gifu.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Gifu/Gifu-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Gifu/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Gifu/Gifu.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Gifu;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		346A325899A71873CE46E734081078BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32920A686024D89EA38A055B233D7BB2 /* Gifu.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Gifu/Gifu-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Gifu/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Gifu/Gifu.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Gifu;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6E2EED0629166552515DCE4B24A60F65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1A522EBE078A769C98C72883275DBFB /* Pods-Shell Game.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Shell Game/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Shell Game/Pods-Shell Game.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Shell_Game;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		862AF3139CD84E18D34FAF2F43CD0DA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		06644A4F843194DD00A9A52FE5764579 /* Build configuration list for PBXNativeTarget "Pods-Shell Game" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12F28A01E0D710FB0DE0CF5BDD5A9F3A /* Debug */,
+				6E2EED0629166552515DCE4B24A60F65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13E96A645A77DAD1FD4F541F18F5DDBF /* Debug */,
+				862AF3139CD84E18D34FAF2F43CD0DA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99518D82AF1031CB46BE137A74D3E7B4 /* Build configuration list for PBXNativeTarget "Gifu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E362B21B87D416014B1C6751C48E221 /* Debug */,
+				346A325899A71873CE46E734081078BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
